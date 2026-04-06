@@ -46,3 +46,4 @@ Mavzeron aims to connect the user with the noble, cold texture of industrial sof
     Accent Colors: #ffffff (Chrome Bright), #c0c0c0 (Silver), #1a1c1e (Dark Metal)
 
     Key Effects: Backdrop-filter (Blur), Drop-shadow (Glow), Keyframe Animations.
+<img width="1281" height="1129" alt="Snapshot_2026-04-06_20-05-32" src="https://github.com/user-attachments/assets/17a465cf-1ab2-4eae-95cc-4c7b7de7629d" />
