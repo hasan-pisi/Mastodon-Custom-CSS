@@ -1,0 +1,219 @@
+/* ============================================================
+   MASTODON TURUNCU NEON: MAVZERON EDITION (V10 - KESİN ÇÖZÜM)
+   ============================================================ */
+
+/* --- 1. KOYU DERİN ARKA PLAN --- */
+body, .app-body, .layout-single-column, .columns-area {
+    background: radial-gradient(circle at 10% 20%, #1a0a00 0%, #050200 40%, #000000 100%) !important;
+}
+.column, .drawer, .drawer__inner {
+    background-color: rgba(15, 7, 0, 0.85) !important;
+    backdrop-filter: blur(10px) !important;
+    border-right: 1px solid rgba(255, 122, 0, 0.1) !important;
+}
+
+/* --- 2. KAYDIRMA ÇUBUĞU --- */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0a0400 !important; }
+::-webkit-scrollbar-thumb {
+    background: #ff7a00 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0 6px rgba(255, 106, 0, 0.5) !important;
+}
+
+/* --- 3. YAZI TIPLERİ VE LİNKLER --- */
+.status__display-name, .display-name__html, .account__display-name strong { color: #ffffff !important; }
+.display-name__account, .status__relative-time { color: #cc7700 !important; }
+.status__content, .status__content p { color: #e0d0c0 !important; }
+a.status__content__spoiler-link, .status__content a.unhandled-link, .status__content .mention {
+    color: #ff9500 !important;
+    text-decoration: none !important;
+    border-bottom: 1px dotted #ff7a00 !important;
+}
+
+/* --- 4. SOL MENÜ VE NAVİGASYON --- */
+.navigation-panel__item, .column-link {
+    color: #ff8c00 !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+.navigation-panel__item .column-link__icon, .column-link__icon { color: #ff7a00 !important; }
+.navigation-panel__item:hover, .column-link:hover {
+    background-color: rgba(255, 122, 0, 0.12) !important;
+    color: #fff !important;
+    transform: translateX(4px) !important;
+}
+.navigation-panel__item.active, .column-link.active {
+    background: linear-gradient(90deg, #ff7a00 0%, #cc5500 100%) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 15px rgba(255, 122, 0, 0.3) !important;
+}
+.navigation-panel__item.active .column-link__icon, .column-link.active .column-link__icon { color: #ffffff !important; }
+
+/* --- 5. LOGO (GEMİSİNİN ÇALIŞAN KODU) --- */
+.logo, .logo svg, .logo img, .tabs-bar__logo svg, .navigation-panel__logo svg {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+}
+
+.tabs-bar__logo, .navigation-panel__logo, .column-header__button .logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    min-width: 150px !important;
+    height: 50px !important;
+    position: relative !important;
+    overflow: visible !important;
+    text-decoration: none !important;
+}
+
+.tabs-bar__logo::before, .navigation-panel__logo a::before, .column-header__button .logo::before {
+    content: ">>>>>>>>>>>>>>>>YOUR SERVER NAME<<<<<<<<<<<<<<" !important;
+    font-family: 'Inter', system-ui, sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 900 !important;
+    color: #ff7a00 !important;
+    text-shadow: 0 0 10px rgba(255, 122, 0, 0.8), 0 0 20px rgba(255, 122, 0, 0.4) !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase !important;
+    visibility: visible !important;
+    position: absolute !important;
+    left: 0 !important;
+    z-index: 99 !important;
+}
+
+/* --- 6. AÇILIR MENÜLER --- */
+.dropdown-menu, .popover__menu, .privacy-dropdown__dropdown {
+    background: rgba(15, 7, 0, 0.95) !important;
+    backdrop-filter: blur(15px) !important;
+    border: 1px solid #ff7a00 !important;
+    border-radius: 4px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255, 122, 0, 0.2) !important;
+    padding: 5px !important;
+}
+.dropdown-menu__item a, .dropdown-menu__item button, .dropdown-menu__arrow {
+    color: #ffa54c !important;
+    font-weight: 600 !important;
+    border-radius: 4px !important;
+    transition: all 0.2s ease !important;
+}
+.dropdown-menu__item a:hover, .dropdown-menu__item button:hover {
+    background: linear-gradient(90deg, rgba(255, 122, 0, 0.2), transparent) !important;
+    color: #ffffff !important;
+    padding-left: 15px !important;
+}
+.dropdown-menu__separator { border-bottom: 1px solid rgba(255, 122, 0, 0.1) !important; }
+
+/* --- 7. GÖNDERİLER (KART GÖRÜNÜMÜ) --- */
+.status__wrapper {
+    border: 1px solid #2a1500 !important;
+    border-radius: 12px !important;
+    margin-bottom: 15px !important;
+    padding: 15px !important;
+    background-color: #0d0600 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
+    transition: all 0.3s ease !important;
+}
+.status__wrapper:hover {
+    background-color: #110800 !important;
+    border-color: #ff7a00 !important;
+    box-shadow: 0 0 20px rgba(255, 122, 0, 0.15), 0 8px 20px rgba(0, 0, 0, 0.6) !important;
+}
+.detailed-status__wrapper {
+    border: 1px solid #2a1500 !important;
+    border-radius: 16px !important;
+    margin: 20px 10px !important;
+    padding: 20px !important;
+    background-color: #0d0600 !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* --- 8. BEĞENİ VE DİĞER AKSİYONLAR --- */
+.status__action-bar-button { transition: all 0.2s ease !important; }
+.status__action-bar-button:hover { color: #ff8c00 !important; background-color: rgba(255, 122, 0, 0.1) !important; }
+
+.icon-button.icon-button-favourite.active svg {
+    color: #ffa54c !important;
+    filter: drop-shadow(0 0 4px rgba(255, 165, 76, 1)) drop-shadow(0 0 10px rgba(255, 120, 0, 0.7)) !important;
+}
+.icon-button.icon-button-shared.active svg {
+    color: #ffa726 !important;
+    filter: drop-shadow(0 0 4px rgba(255, 167, 38, 0.7)) !important;
+}
+
+/* --- 9. BUTONLAR --- */
+button.button, .button, a.button {
+    background: linear-gradient(135deg, #ff8c00 0%, #ff5500 100%) !important;
+    color: #fff !important;
+    border: none !important;
+    font-weight: 800 !important;
+    box-shadow: 0 4px 15px rgba(255, 122, 0, 0.25) !important;
+}
+button.button:hover, .button:hover, a.button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(255, 122, 0, 0.4) !important;
+}
+.button.button-tertiary, .button.button-secondary {
+    background: transparent !important;
+    border: 1px solid #ff7a00 !important;
+    box-shadow: none !important;
+    color: #ff7a00 !important;
+}
+
+/* --- 10. SÜTUN BAŞLIKLARI --- */
+.column-header__button {
+    background-color: rgba(15, 7, 0, 0.9) !important;
+    color: #ff8c00 !important;
+    border-bottom: 2px solid #33200d !important;
+}
+
+/* --- 11. ADMIN PANELİ (TAM ENTEGRASYON) --- */
+.admin-wrapper .sidebar-wrapper {
+    background-color: #0a0400 !important;
+}
+.admin-wrapper .sidebar ul a {
+    color: #ff8c00 !important;
+    transition: all 0.2s ease !important;
+    border-radius: 4px !important;
+    display: block !important;
+    margin: 2px 0 !important;
+}
+.admin-wrapper .sidebar ul a:hover {
+    background-color: rgba(255, 122, 0, 0.15) !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.admin-wrapper .sidebar ul a.selected {
+    background: linear-gradient(90deg, #ff7a00 0%, #cc5500 100%) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(255, 122, 0, 0.3) !important;
+}
+.admin-wrapper .tabs a, .admin-wrapper .content__heading h2 small {
+    color: #ff8c00 !important;
+    transition: all 0.2s ease !important;
+}
+.admin-wrapper .tabs a:hover { color: #ffbe66 !important; }
+.admin-wrapper .tabs a.active {
+    color: #ffffff !important;
+    border-bottom: 2px solid #ff7a00 !important;
+}
+.admin-wrapper .content { background-color: rgba(10, 4, 0, 0.9) !important; }
+.admin-wrapper .card, .admin-wrapper .table-wrapper {
+    background-color: #0d0600 !important;
+    border: 1px solid #2a1500 !important;
+    border-radius: 8px !important;
+}
+.admin-wrapper table th {
+    color: #ff8c00 !important;
+    border-bottom: 1px solid #33200d !important;
+}
+.admin-wrapper table td {
+    color: #e0d0c0 !important;
+    border-bottom: 1px solid rgba(255, 122, 0, 0.05) !important;
+}
+.admin-wrapper .button {
+    background: linear-gradient(135deg, #ff8c00 0%, #ff5500 100%) !important;
+    color: #fff !important;
+}
