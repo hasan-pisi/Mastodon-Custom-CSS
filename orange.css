@@ -70,7 +70,7 @@ a.status__content__spoiler-link, .status__content a.unhandled-link, .status__con
 }
 
 .tabs-bar__logo::before, .navigation-panel__logo a::before, .column-header__button .logo::before {
-    content: ">>>>>>>>>>>>>>>>YOUR SERVER NAME<<<<<<<<<<<<<<" !important;
+    content: "Mavzeron" !important;
     font-family: 'Inter', system-ui, sans-serif !important;
     font-size: 22px !important;
     font-weight: 900 !important;
